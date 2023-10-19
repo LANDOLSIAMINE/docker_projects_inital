@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Template implementation for the pate_template_preview theme hook.
+ *
+ * Available variables:
+ * - node: The fully-loaded node object.
+ * - node_view_url: The node canonical URL with a special query string appended.
+ * - create_from_template_label: The label to use when building a CTA link.
+ * - create_from_template_url: The URL the CTA should point to.
+ */
+#}
+<div class="pate-cta-link-wrapper">
+  <a class="button button--primary" href="{{ create_from_template_url }}">{{ create_from_template_label }}</a>
+</div>
+<div class="pate-template-preview">
+  <iframe name='pate-frame-id-{{ node.id }}' class='pate-template-iframe' title='{{ node.label }}' src='{{ node_view_url }}' width='100%' height='1200px'></iframe>
+</div>

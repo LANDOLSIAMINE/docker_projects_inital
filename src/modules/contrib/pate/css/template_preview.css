@@ -1,0 +1,15 @@
+/**
+ * @file template_preview.css
+ */
+
+.pate-cta-link-wrapper {
+  overflow: hidden;
+}
+
+.pate-cta-link-wrapper a.button--primary {
+  margin-left: 0.5rem;
+}
+
+.pate-template-preview {
+  margin-top: 1rem;
+}

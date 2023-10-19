@@ -1,0 +1,18 @@
+name: Page Templates API
+type: module
+description: Allows converting existing nodes into content templates, which can be replicated by editors.
+core_version_requirement: ^9.2 || ^10
+package: Other
+
+dependencies:
+  - drupal:node
+  - replicate:replicate
+
+test_dependencies:
+  - paragraphs:paragraphs
+  - entity_reference_revisions:entity_reference_revisions
+
+# Information added by Drupal.org packaging script on 2022-11-18
+version: '1.2.0'
+project: 'pate'
+datestamp: 1668789308

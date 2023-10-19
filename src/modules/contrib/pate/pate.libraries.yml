@@ -1,0 +1,21 @@
+templates_list:
+  css:
+    theme:
+      css/templates_list.css: {}
+
+template_preview:
+  css:
+    theme:
+      css/template_preview.css: {}
+
+template_preview.iframe:
+  css:
+    theme:
+      css/template_preview.iframe.css: {}
+  js:
+    js/template_preview.iframe.js: {}
+  dependencies:
+    - core/drupalSettings
+    - core/jquery
+    - core/drupal
+    - core/once

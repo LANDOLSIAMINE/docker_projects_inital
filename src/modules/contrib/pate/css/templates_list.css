@@ -1,0 +1,13 @@
+/**
+ * @file templates_list.css
+ */
+
+.pate-template {
+  margin-top: 1rem;
+}
+
+.pate-title {
+  width: 60%;
+  float: left;
+  margin-right: 16px;
+}

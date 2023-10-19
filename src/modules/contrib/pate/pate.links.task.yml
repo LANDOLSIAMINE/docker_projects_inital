@@ -1,0 +1,4 @@
+entity.node.templatize:
+  title: 'Page Template'
+  route_name: pate.templatize
+  base_route: entity.node.canonical

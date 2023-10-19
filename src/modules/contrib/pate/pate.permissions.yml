@@ -1,0 +1,7 @@
+manage page templates:
+  title: 'Manage page templates'
+  description: 'Users with this permission will be able to convert nodes into templates.'
+  restrict access: TRUE
+use page templates:
+  title: 'Use page templates'
+  description: 'Users with this permission will be able to create nodes from existing templates.'

@@ -1,0 +1,17 @@
+{#
+/**
+ * @file
+ * Template implementation for the pate_templates_list theme hook.
+ *
+ * Available variables:
+ * - templates: A list of renderable arrays of templates.
+ */
+#}
+<a class="button" href="{{ add_new_url }}">{{ add_new_label }}</a>
+<div class="pate-templates-list">
+  {% for template in templates %}
+    <div class="pate-template">
+      {{ template }}
+    </div>
+  {% endfor %}
+</div>

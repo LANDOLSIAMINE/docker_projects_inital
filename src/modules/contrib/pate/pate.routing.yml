@@ -1,0 +1,43 @@
+pate.templatize:
+  path: '/node/{node}/templatize'
+  defaults:
+    _entity_form: 'node.templatize'
+    entity_type_id: 'node'
+    _title: 'Convert into template'
+  requirements:
+    _custom_access: '\Drupal\pate\Form\PateTemplatizeForm::access'
+    node: \d+
+  options:
+    _admin_route: TRUE
+
+pate.templates_for_type:
+  path: '/node/{node_type}/templates'
+  defaults:
+    _controller: '\Drupal\pate\Controller\PateTemplatesPerTypeController::list'
+    _title_callback: '\Drupal\pate\Controller\PateTemplatesPerTypeController::title'
+  requirements:
+    _permission: 'use page templates'
+  options:
+    _admin_route: TRUE
+
+pate.create_from_template:
+  path: '/node/{node}/create-from-template'
+  defaults:
+    _controller: '\Drupal\pate\Controller\PateCreateNodeFromTemplateController::createNode'
+    _title: 'Create from template'
+  requirements:
+    _custom_access: '\Drupal\pate\Controller\PateCreateNodeFromTemplateController::access'
+    node: \d+
+  options:
+    _admin_route: TRUE
+
+pate.template_preview:
+  path: '/node/{node}/pate-preview'
+  defaults:
+    _controller: '\Drupal\pate\Controller\PateTemplatePreviewController::preview'
+    _title: 'Preview template'
+  requirements:
+    _custom_access: '\Drupal\pate\Controller\PateCreateNodeFromTemplateController::access'
+    node: \d+
+  options:
+    _admin_route: FALSE

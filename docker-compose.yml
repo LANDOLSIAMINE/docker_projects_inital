@@ -1,0 +1,36 @@
+version: '3'
+services:
+  container_database:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: drupal_db  #nom de la base de donnée
+  container_drupal:
+    image: drupal:10
+    ports:
+      - 3301:80
+    depends_on:
+      - container_database
+    environment:
+      DRUPAL_DATABASE_HOST: db
+      DRUPAL_DATABASE_NAME: drupal_db
+      DRUPAL_DATABASE_USER: root
+      DRUPAL_DATABASE_PASSWORD: example
+    volumes:
+      - ./src:/var/www/html
+
+  container_phpmyadmin:
+    image: arm64v8/phpmyadmin
+    environment:
+      PMA_HOST: db
+      PHP_UPLOAD_MAX_FILESIZE: 1G
+      PHP_MAX_INPUT_VARS: 1G
+      PMA_ARBITRARY: 1
+      UPLOAD_LIMIT: 140G
+      MAX_EXECUTION_TIME: 256998
+      MEMORY_LIMIT: 140G
+      MYSQL_ROOT_PASSWORD: example
+    ports:
+      - 3302:80
+volumes:
+ src:
