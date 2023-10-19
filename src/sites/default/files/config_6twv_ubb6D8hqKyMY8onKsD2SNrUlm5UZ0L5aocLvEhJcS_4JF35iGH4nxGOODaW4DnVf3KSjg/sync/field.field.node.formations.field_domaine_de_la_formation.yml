@@ -1,0 +1,29 @@
+uuid: 9268529a-444f-41be-98d6-091c3ac06a3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domaine_de_la_formation
+    - node.type.formations
+    - taxonomy.vocabulary.domaine_de_formation
+id: node.formations.field_domaine_de_la_formation
+field_name: field_domaine_de_la_formation
+entity_type: node
+bundle: formations
+label: 'Domaine de la formation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      domaine_de_formation: domaine_de_formation
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

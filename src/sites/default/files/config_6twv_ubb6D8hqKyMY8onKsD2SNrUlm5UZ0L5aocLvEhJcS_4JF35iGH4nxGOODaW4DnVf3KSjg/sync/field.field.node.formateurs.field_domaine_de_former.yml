@@ -1,0 +1,29 @@
+uuid: 0e8e4e6f-bae1-4be7-9215-e12141096172
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domaine_de_former
+    - node.type.formateurs
+    - taxonomy.vocabulary.domaine_de_formation
+id: node.formateurs.field_domaine_de_former
+field_name: field_domaine_de_former
+entity_type: node
+bundle: formateurs
+label: 'Domaine de former'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      domaine_de_formation: domaine_de_formation
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

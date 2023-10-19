@@ -1,0 +1,42 @@
+uuid: f823f26b-0f0f-48ce-a923-7319afde79d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.formateurs.body
+    - field.field.node.formateurs.field_annee_d_experience
+    - field.field.node.formateurs.field_domaine_de_former
+    - field.field.node.formateurs.field_lieu_d_exercice
+    - field.field.node.formateurs.field_nom
+    - field.field.node.formateurs.field_photo_formateur
+    - field.field.node.formateurs.field_prenom
+    - node.type.formateurs
+  module:
+    - text
+    - user
+id: node.formateurs.teaser
+targetEntityType: node
+bundle: formateurs
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_annee_d_experience: true
+  field_domaine_de_former: true
+  field_lieu_d_exercice: true
+  field_nom: true
+  field_photo_formateur: true
+  field_prenom: true

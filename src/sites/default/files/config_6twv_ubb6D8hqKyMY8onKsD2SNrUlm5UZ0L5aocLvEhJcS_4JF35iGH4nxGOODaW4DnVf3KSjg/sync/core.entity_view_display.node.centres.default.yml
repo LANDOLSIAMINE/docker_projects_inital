@@ -1,0 +1,108 @@
+uuid: 5abfabc1-c2a6-420c-8ae7-684fbb7234c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.centres.field_acces
+    - field.field.node.centres.field_adresse
+    - field.field.node.centres.field_description_du_centre
+    - field.field.node.centres.field_formateurs
+    - field.field.node.centres.field_horaire
+    - field.field.node.centres.field_informations
+    - field.field.node.centres.field_mail_du_centre
+    - field.field.node.centres.field_photos_du_centre
+    - field.field.node.centres.field_video_du_centre
+    - node.type.centres
+  module:
+    - address
+    - datetime_range
+    - media
+    - text
+    - user
+id: node.centres.default
+targetEntityType: node
+bundle: centres
+mode: default
+content:
+  field_acces:
+    type: text_trimmed
+    label: above
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_adresse:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_description_du_centre:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_formateurs:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_horaire:
+    type: daterange_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+      separator: '-'
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_informations:
+    type: text_trimmed
+    label: above
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_mail_du_centre:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_photos_du_centre:
+    type: media_thumbnail
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_video_du_centre:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

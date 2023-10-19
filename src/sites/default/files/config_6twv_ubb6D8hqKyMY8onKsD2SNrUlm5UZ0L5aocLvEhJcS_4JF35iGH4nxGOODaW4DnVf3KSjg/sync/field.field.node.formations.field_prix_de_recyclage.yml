@@ -1,0 +1,23 @@
+uuid: 411a5ed5-9f75-487e-83ef-27b0eb3dac21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prix_de_recyclage
+    - node.type.formations
+id: node.formations.field_prix_de_recyclage
+field_name: field_prix_de_recyclage
+entity_type: node
+bundle: formations
+label: 'Prix de recyclage'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float
