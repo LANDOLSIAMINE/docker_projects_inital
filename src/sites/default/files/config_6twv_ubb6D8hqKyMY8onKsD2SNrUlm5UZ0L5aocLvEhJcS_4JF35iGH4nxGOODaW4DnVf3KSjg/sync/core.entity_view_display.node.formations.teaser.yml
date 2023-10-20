@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.formations.field_categories
     - field.field.node.formations.field_description_de_la_formatio
     - field.field.node.formations.field_domaine_de_la_formation
     - field.field.node.formations.field_evaluation_de_la_formation
@@ -11,6 +12,7 @@ dependencies:
     - field.field.node.formations.field_lieu_d_exercice
     - field.field.node.formations.field_prix_de_recyclage
     - field.field.node.formations.field_prix_initial
+    - field.field.node.formations.field_sessions
     - field.field.node.formations.field_type_de_la_formation
     - field.field.node.formations.field_video_de_la_formation
     - node.type.formations
@@ -27,6 +29,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_categories: true
   field_description_de_la_formatio: true
   field_domaine_de_la_formation: true
   field_evaluation_de_la_formation: true
@@ -34,5 +37,6 @@ hidden:
   field_lieu_d_exercice: true
   field_prix_de_recyclage: true
   field_prix_initial: true
+  field_sessions: true
   field_type_de_la_formation: true
   field_video_de_la_formation: true

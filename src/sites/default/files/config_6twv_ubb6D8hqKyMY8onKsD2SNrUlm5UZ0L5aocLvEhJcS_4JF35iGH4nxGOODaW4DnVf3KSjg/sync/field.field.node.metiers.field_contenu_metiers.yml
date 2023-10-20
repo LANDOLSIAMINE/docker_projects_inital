@@ -1,0 +1,25 @@
+uuid: 20a216d6-f3e1-4a7e-b8c9-1db705d6b309
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenu_metiers
+    - node.type.metiers
+  module:
+    - entity_reference_revisions
+id: node.metiers.field_contenu_metiers
+field_name: field_contenu_metiers
+entity_type: node
+bundle: metiers
+label: 'Contenu Metiers'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+field_type: entity_reference_revisions

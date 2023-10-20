@@ -1,0 +1,30 @@
+uuid: 7898e2c3-cfb2-48bb-ac70-042dbcefd0e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.metiers.field_contenu_metiers
+    - field.field.node.metiers.field_description_du_metier
+    - field.field.node.metiers.field_produit_associe
+    - field.field.node.metiers.field_salaire_moyen
+    - field.field.node.metiers.field_secteur_d_activite
+    - node.type.metiers
+  module:
+    - user
+id: node.metiers.teaser
+targetEntityType: node
+bundle: metiers
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_contenu_metiers: true
+  field_description_du_metier: true
+  field_produit_associe: true
+  field_salaire_moyen: true
+  field_secteur_d_activite: true

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.formations.field_categories
     - field.field.node.formations.field_description_de_la_formatio
     - field.field.node.formations.field_domaine_de_la_formation
     - field.field.node.formations.field_evaluation_de_la_formation
@@ -10,6 +11,7 @@ dependencies:
     - field.field.node.formations.field_lieu_d_exercice
     - field.field.node.formations.field_prix_de_recyclage
     - field.field.node.formations.field_prix_initial
+    - field.field.node.formations.field_sessions
     - field.field.node.formations.field_type_de_la_formation
     - field.field.node.formations.field_video_de_la_formation
     - node.type.formations
@@ -21,6 +23,14 @@ targetEntityType: node
 bundle: formations
 mode: default
 content:
+  field_categories:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 109
+    region: content
   field_description_de_la_formatio:
     type: text_default
     label: above
@@ -85,6 +95,14 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     weight: 107
+    region: content
+  field_sessions:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 110
     region: content
   field_type_de_la_formation:
     type: entity_reference_label

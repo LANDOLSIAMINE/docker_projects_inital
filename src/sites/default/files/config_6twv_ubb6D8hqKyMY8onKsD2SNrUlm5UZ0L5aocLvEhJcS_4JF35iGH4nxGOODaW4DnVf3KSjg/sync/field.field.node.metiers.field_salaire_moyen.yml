@@ -1,0 +1,23 @@
+uuid: 32ffebf3-704a-45f8-9fff-aaf1157dc575
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_salaire_moyen
+    - node.type.metiers
+id: node.metiers.field_salaire_moyen
+field_name: field_salaire_moyen
+entity_type: node
+bundle: metiers
+label: 'Salaire Moyen'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: '€ Brut '
+field_type: integer

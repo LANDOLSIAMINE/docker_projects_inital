@@ -1,0 +1,21 @@
+uuid: b3d02ee4-60a7-4709-a424-73a9602e7f23
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - pate
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  pate:
+    is_templatable: false
+name: Catégories
+type: categories
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.formations.field_categories
     - field.field.node.formations.field_description_de_la_formatio
     - field.field.node.formations.field_domaine_de_la_formation
     - field.field.node.formations.field_evaluation_de_la_formation
@@ -10,6 +11,7 @@ dependencies:
     - field.field.node.formations.field_lieu_d_exercice
     - field.field.node.formations.field_prix_de_recyclage
     - field.field.node.formations.field_prix_initial
+    - field.field.node.formations.field_sessions
     - field.field.node.formations.field_type_de_la_formation
     - field.field.node.formations.field_video_de_la_formation
     - node.type.formations
@@ -27,6 +29,16 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_categories:
+    type: entity_reference_autocomplete
+    weight: 129
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_description_de_la_formatio:
     type: text_textarea_with_summary
@@ -79,6 +91,16 @@ content:
     weight: 127
     region: content
     settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_sessions:
+    type: entity_reference_autocomplete
+    weight: 130
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
       placeholder: ''
     third_party_settings: {  }
   field_type_de_la_formation:

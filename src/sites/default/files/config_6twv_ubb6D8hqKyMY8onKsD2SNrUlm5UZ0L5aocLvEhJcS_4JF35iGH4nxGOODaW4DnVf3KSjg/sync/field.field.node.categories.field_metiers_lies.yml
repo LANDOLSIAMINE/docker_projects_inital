@@ -1,0 +1,29 @@
+uuid: e37438c6-e83e-433b-a557-8da143b41914
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metiers_lies
+    - node.type.categories
+    - node.type.metiers
+id: node.categories.field_metiers_lies
+field_name: field_metiers_lies
+entity_type: node
+bundle: categories
+label: 'Métiers liés'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      metiers: metiers
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: b4205ce4-179a-41dc-8567-0552b2f41f58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prix_inital
+    - node.type.categories
+id: node.categories.field_prix_inital
+field_name: field_prix_inital
+entity_type: node
+bundle: categories
+label: 'Prix inital'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

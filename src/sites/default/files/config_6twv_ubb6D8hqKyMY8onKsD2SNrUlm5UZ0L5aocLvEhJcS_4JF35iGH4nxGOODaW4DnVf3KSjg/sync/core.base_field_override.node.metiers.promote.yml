@@ -1,0 +1,22 @@
+uuid: 59b6c648-49a0-494d-af87-299931c5c289
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.metiers
+id: node.metiers.promote
+field_name: promote
+entity_type: node
+bundle: metiers
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
