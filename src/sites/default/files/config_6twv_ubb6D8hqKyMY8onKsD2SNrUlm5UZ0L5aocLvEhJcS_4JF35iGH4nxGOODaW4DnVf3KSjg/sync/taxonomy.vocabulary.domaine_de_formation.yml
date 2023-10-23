@@ -1,8 +1,0 @@
-uuid: 9b9471f7-1c9c-41c9-a26a-99dc00394b62
-langcode: en
-status: true
-dependencies: {  }
-name: 'Domaine de formation'
-vid: domaine_de_formation
-description: ''
-weight: 0

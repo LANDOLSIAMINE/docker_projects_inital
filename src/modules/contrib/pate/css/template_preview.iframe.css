@@ -1,8 +1,0 @@
-/**
- * @file template_preview.iframe.css
- */
-
-body {
-  /* Prevent all mouse interaction with the template node */
-  pointer-events: none;
-}

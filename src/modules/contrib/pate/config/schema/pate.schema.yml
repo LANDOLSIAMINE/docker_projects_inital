@@ -1,7 +1,0 @@
-node.type.*.third_party.pate:
-  type: mapping
-  label: 'Per node-type Page Template third party settings'
-  mapping:
-    is_templatable:
-      type: boolean
-      label: 'Whether nodes of this content type can be converted into Page Templates'

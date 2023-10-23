@@ -1,3 +1,0 @@
-pate.extra_links:
-  deriver: \Drupal\pate\Plugin\Derivative\ExtraLinks
-  menu_name: admin
