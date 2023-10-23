@@ -1,0 +1,29 @@
+uuid: 82cdfbbd-af07-4a99-877e-b7e92409bd62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_produit_associe
+    - node.type.formations
+    - node.type.metiers
+id: node.metiers.field_produit_associe
+field_name: field_produit_associe
+entity_type: node
+bundle: metiers
+label: 'Produit associé'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      formations: formations
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

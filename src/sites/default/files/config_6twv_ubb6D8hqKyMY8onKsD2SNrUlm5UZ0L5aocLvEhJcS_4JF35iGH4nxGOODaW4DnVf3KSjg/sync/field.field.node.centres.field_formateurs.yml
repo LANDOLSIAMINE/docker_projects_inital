@@ -1,0 +1,29 @@
+uuid: 21d7bc21-0cd4-482b-9036-71c469abb1ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_formateurs
+    - node.type.centres
+    - node.type.formateurs
+id: node.centres.field_formateurs
+field_name: field_formateurs
+entity_type: node
+bundle: centres
+label: Formateurs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      formateurs: formateurs
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

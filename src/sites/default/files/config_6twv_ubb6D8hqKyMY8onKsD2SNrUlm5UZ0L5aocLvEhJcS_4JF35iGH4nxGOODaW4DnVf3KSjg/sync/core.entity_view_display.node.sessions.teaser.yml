@@ -1,0 +1,24 @@
+uuid: 55fe715a-942b-4098-a92b-22c6ae29502e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sessions.field_date_de_fin
+    - field.field.node.sessions.field_date_debut
+    - node.type.sessions
+  module:
+    - user
+id: node.sessions.teaser
+targetEntityType: node
+bundle: sessions
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_date_de_fin: true
+  field_date_debut: true

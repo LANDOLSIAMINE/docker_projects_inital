@@ -1,0 +1,29 @@
+uuid: de3d8f33-5684-4b97-a1e6-d3f017d112eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categories
+    - node.type.categories
+    - node.type.machines
+id: node.machines.field_categories
+field_name: field_categories
+entity_type: node
+bundle: machines
+label: Categories
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

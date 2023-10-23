@@ -1,0 +1,22 @@
+uuid: 5df8f5d0-1993-46c1-981a-613708641851
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.formations
+id: node.formations.promote
+field_name: promote
+entity_type: node
+bundle: formations
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,38 @@
+uuid: 29d227d4-687c-4eda-baf7-91e196001caf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.centres.field_acces
+    - field.field.node.centres.field_adresse
+    - field.field.node.centres.field_description_du_centre
+    - field.field.node.centres.field_formateurs
+    - field.field.node.centres.field_horaire
+    - field.field.node.centres.field_informations
+    - field.field.node.centres.field_mail_du_centre
+    - field.field.node.centres.field_photos_du_centre
+    - field.field.node.centres.field_video_du_centre
+    - node.type.centres
+  module:
+    - user
+id: node.centres.teaser
+targetEntityType: node
+bundle: centres
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_acces: true
+  field_adresse: true
+  field_description_du_centre: true
+  field_formateurs: true
+  field_horaire: true
+  field_informations: true
+  field_mail_du_centre: true
+  field_photos_du_centre: true
+  field_video_du_centre: true

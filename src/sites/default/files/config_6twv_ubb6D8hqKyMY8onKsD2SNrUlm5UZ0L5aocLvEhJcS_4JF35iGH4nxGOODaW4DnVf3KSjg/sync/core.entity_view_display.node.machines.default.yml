@@ -1,0 +1,99 @@
+uuid: 4949eb5b-58f8-4316-b714-b095ba95ca3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.machines.body
+    - field.field.node.machines.field_avantages
+    - field.field.node.machines.field_capacite_minimale
+    - field.field.node.machines.field_categories
+    - field.field.node.machines.field_dimensions_generales
+    - field.field.node.machines.field_inconvenients
+    - field.field.node.machines.field_vitesse_de_deplacement
+    - node.type.machines
+  module:
+    - field_group
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_caracteristiques:
+      children:
+        - field_dimensions_generales
+        - field_vitesse_de_deplacement
+        - field_capacite_minimale
+      label: Caractéristiques
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: true
+        description: ''
+id: node.machines.default
+targetEntityType: node
+bundle: machines
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_avantages:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_capacite_minimale:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_categories:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_dimensions_generales:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_inconvenients:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_vitesse_de_deplacement:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,133 @@
+uuid: 7f318861-96a2-475a-af24-867f264e943d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.categories.body
+    - field.field.node.categories.field_description_de_categorie
+    - field.field.node.categories.field_image_engin
+    - field.field.node.categories.field_metiers_lies
+    - field.field.node.categories.field_prix_de_recyclage
+    - field.field.node.categories.field_prix_inital
+    - field.field.node.categories.field_type_engin
+    - node.type.categories
+  module:
+    - media_library
+    - path
+    - text
+id: node.categories.default
+targetEntityType: node
+bundle: categories
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_description_de_categorie:
+    type: text_textarea_with_summary
+    weight: 124
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_image_engin:
+    type: media_library_widget
+    weight: 122
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_metiers_lies:
+    type: entity_reference_autocomplete
+    weight: 125
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_prix_de_recyclage:
+    type: number
+    weight: 128
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_prix_inital:
+    type: number
+    weight: 126
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_type_engin:
+    type: text_textfield
+    weight: 123
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

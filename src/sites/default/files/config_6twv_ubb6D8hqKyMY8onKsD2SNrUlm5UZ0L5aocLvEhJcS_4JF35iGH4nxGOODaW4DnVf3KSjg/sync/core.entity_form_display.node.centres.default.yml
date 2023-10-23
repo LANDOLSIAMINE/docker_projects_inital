@@ -1,0 +1,148 @@
+uuid: c3388a2d-e9b0-4ee9-bf3f-d9c50cf611f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.centres.field_acces
+    - field.field.node.centres.field_adresse
+    - field.field.node.centres.field_description_du_centre
+    - field.field.node.centres.field_formateurs
+    - field.field.node.centres.field_horaire
+    - field.field.node.centres.field_informations
+    - field.field.node.centres.field_mail_du_centre
+    - field.field.node.centres.field_photos_du_centre
+    - field.field.node.centres.field_video_du_centre
+    - node.type.centres
+  module:
+    - address
+    - datetime_range
+    - media_library
+    - path
+    - text
+id: node.centres.default
+targetEntityType: node
+bundle: centres
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_acces:
+    type: text_textarea_with_summary
+    weight: 11
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_adresse:
+    type: address_default
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_description_du_centre:
+    type: text_textarea_with_summary
+    weight: 9
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_formateurs:
+    type: options_buttons
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_horaire:
+    type: daterange_default
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_informations:
+    type: text_textarea_with_summary
+    weight: 10
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_mail_du_centre:
+    type: email_default
+    weight: 8
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_photos_du_centre:
+    type: media_library_widget
+    weight: 13
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_video_du_centre:
+    type: media_library_widget
+    weight: 14
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

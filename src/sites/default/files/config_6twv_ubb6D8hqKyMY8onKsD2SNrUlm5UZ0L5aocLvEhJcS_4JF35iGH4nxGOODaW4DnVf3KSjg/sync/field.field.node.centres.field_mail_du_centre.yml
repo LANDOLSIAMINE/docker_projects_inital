@@ -1,0 +1,19 @@
+uuid: 318799cb-f61f-41dd-9ae8-6ab77dd63605
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mail_du_centre
+    - node.type.centres
+id: node.centres.field_mail_du_centre
+field_name: field_mail_du_centre
+entity_type: node
+bundle: centres
+label: 'Mail du centre'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

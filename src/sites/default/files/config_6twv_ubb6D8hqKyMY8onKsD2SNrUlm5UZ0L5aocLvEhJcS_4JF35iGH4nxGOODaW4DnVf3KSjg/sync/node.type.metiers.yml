@@ -1,0 +1,21 @@
+uuid: 4cc94f35-442a-4d45-bb40-ab11a397caba
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - pate
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  pate:
+    is_templatable: false
+name: Métiers
+type: metiers
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,21 @@
+uuid: 8f57405a-80cd-48fc-bc81-b3b6d1aa4367
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - pate
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  pate:
+    is_templatable: false
+name: Formateurs
+type: formateurs
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

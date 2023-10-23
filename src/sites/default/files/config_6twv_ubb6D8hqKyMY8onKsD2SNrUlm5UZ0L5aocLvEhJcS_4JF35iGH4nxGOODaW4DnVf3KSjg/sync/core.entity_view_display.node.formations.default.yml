@@ -1,0 +1,147 @@
+uuid: 3cd069b6-808a-45ec-ba62-aea255ddd2c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.formations.field_categories
+    - field.field.node.formations.field_description_de_la_formatio
+    - field.field.node.formations.field_domaine_de_la_formation
+    - field.field.node.formations.field_evaluation_de_la_formation
+    - field.field.node.formations.field_examen
+    - field.field.node.formations.field_formateurs
+    - field.field.node.formations.field_lieu_d_exercice
+    - field.field.node.formations.field_prix_de_recyclage
+    - field.field.node.formations.field_prix_initial
+    - field.field.node.formations.field_programmes
+    - field.field.node.formations.field_sessions
+    - field.field.node.formations.field_type_de_la_formation
+    - field.field.node.formations.field_video_de_la_formation
+    - node.type.formations
+  module:
+    - text
+    - user
+id: node.formations.default
+targetEntityType: node
+bundle: formations
+mode: default
+content:
+  field_categories:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_description_de_la_formatio:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_domaine_de_la_formation:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_evaluation_de_la_formation:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_examen:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_formateurs:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_lieu_d_exercice:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_prix_de_recyclage:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_prix_initial:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_programmes:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_sessions:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_type_de_la_formation:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_video_de_la_formation:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

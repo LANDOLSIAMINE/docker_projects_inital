@@ -1,0 +1,21 @@
+uuid: 23bc2146-fd39-46bd-8e9c-d6018aa23954
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - pate
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  pate:
+    is_templatable: false
+name: Formations
+type: formations
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

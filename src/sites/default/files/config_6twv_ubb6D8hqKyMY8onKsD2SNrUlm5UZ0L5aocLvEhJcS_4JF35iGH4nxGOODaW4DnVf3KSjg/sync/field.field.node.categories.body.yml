@@ -1,0 +1,24 @@
+uuid: db0c734e-ed7c-4f36-b5d2-a708b7a10812
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.categories
+  module:
+    - text
+id: node.categories.body
+field_name: body
+entity_type: node
+bundle: categories
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

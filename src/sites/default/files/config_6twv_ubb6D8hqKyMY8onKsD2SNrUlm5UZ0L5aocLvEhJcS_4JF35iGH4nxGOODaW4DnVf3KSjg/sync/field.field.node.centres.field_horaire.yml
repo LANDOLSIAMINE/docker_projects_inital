@@ -1,0 +1,21 @@
+uuid: d119dd75-ae0a-48fd-96d9-929dda466652
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_horaire
+    - node.type.centres
+  module:
+    - datetime_range
+id: node.centres.field_horaire
+field_name: field_horaire
+entity_type: node
+bundle: centres
+label: Horaire
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

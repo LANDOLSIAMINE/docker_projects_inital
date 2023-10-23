@@ -1,0 +1,21 @@
+uuid: 4738ba1f-1c2e-4251-a733-5d82497a2c39
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - pate
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  pate:
+    is_templatable: false
+name: Machines
+type: machines
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,82 @@
+uuid: be9b003f-e37f-4f0d-8fea-b6c8c223c6d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.formateurs.body
+    - field.field.node.formateurs.field_annee_d_experience
+    - field.field.node.formateurs.field_domaine_de_former
+    - field.field.node.formateurs.field_lieu_d_exercice
+    - field.field.node.formateurs.field_nom
+    - field.field.node.formateurs.field_photo_formateur
+    - field.field.node.formateurs.field_prenom
+    - node.type.formateurs
+  module:
+    - text
+    - user
+id: node.formateurs.default
+targetEntityType: node
+bundle: formateurs
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_annee_d_experience:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_domaine_de_former:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_lieu_d_exercice:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_nom:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_photo_formateur:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_prenom:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

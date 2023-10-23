@@ -1,0 +1,23 @@
+uuid: 72117f6f-8b55-4868-a9fb-58061039e901
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_evaluation_de_la_formation
+    - node.type.formations
+id: node.formations.field_evaluation_de_la_formation
+field_name: field_evaluation_de_la_formation
+entity_type: node
+bundle: formations
+label: 'Evaluation de la formation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

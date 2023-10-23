@@ -1,0 +1,29 @@
+uuid: 64ef63e6-2695-47b2-a2f9-2681bfbc20d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photos_du_centre
+    - media.type.image
+    - node.type.centres
+id: node.centres.field_photos_du_centre
+field_name: field_photos_du_centre
+entity_type: node
+bundle: centres
+label: 'Photos du centre'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
