@@ -1,3 +1,5 @@
 src/
 backup_db/
 backup
+
+.DS_Store
