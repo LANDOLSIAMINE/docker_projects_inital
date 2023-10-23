@@ -1,30 +1,31 @@
 version: '3'
 services:
-  container_database:
+  formalog_database:
     image: mysql:8
     environment:
       MYSQL_ROOT_PASSWORD: example
-      MYSQL_DATABASE: drupal_db  #nom de la base de donnée 
+      MYSQL_DATABASE: drupal_db
     volumes:
       - shared_volume:/backup
-  container_drupal:
+
+  formalog_drupal:
     build: 
       context: .
       dockerfile: Dockerfile
     ports:
-      - 3301:80
+      - 3389:80
     depends_on:
-      - container_database
+      - formalog_database
     environment:
       DRUPAL_DATABASE_HOST: db
       DRUPAL_DATABASE_NAME: drupal_db
       DRUPAL_DATABASE_USER: root
       DRUPAL_DATABASE_PASSWORD: example
     volumes:
-      - ./src:/var/www/html
+      - ./src:/opt/drupal/
       - shared_volume:/backup
 
-  container_phpmyadmin:
+  formalog_phpmyadmin:
     image: arm64v8/phpmyadmin
     environment:
       PMA_HOST: db
@@ -36,7 +37,8 @@ services:
       MEMORY_LIMIT: 140G
       MYSQL_ROOT_PASSWORD: example
     ports:
-      - 3302:80
+      - 3388:80
+
 volumes:
- shared_volume:
- src:
+  shared_volume:
+  src:
