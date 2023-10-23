@@ -1,9 +1,11 @@
 FROM drupal:10
 
 RUN apt-get update && \
-    apt-get install -y git && \
-    php -r "readfile('http://files.drush.org/drush.phar');" > drush && \
-    chmod +x drush && \
-    mv drush /usr/local/bin
+    apt-get install -y git 
+   
+RUN composer require drush/drush
+
+# Clone your repository
+RUN git clone https://github.com/LANDOLSIAMINE/formalogistics.git
 
 WORKDIR /opt/drupal
