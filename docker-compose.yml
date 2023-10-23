@@ -4,9 +4,13 @@ services:
     image: mysql:8
     environment:
       MYSQL_ROOT_PASSWORD: example
-      MYSQL_DATABASE: drupal_db  #nom de la base de donnée
+      MYSQL_DATABASE: drupal_db  #nom de la base de donnée 
+    volumes:
+      - shared_volume:/backup
   container_drupal:
-    image: drupal:10
+    build: 
+      context: .
+      dockerfile: Dockerfile
     ports:
       - 3301:80
     depends_on:
@@ -18,6 +22,7 @@ services:
       DRUPAL_DATABASE_PASSWORD: example
     volumes:
       - ./src:/var/www/html
+      - shared_volume:/backup
 
   container_phpmyadmin:
     image: arm64v8/phpmyadmin
@@ -33,4 +38,5 @@ services:
     ports:
       - 3302:80
 volumes:
+ shared_volume:
  src:
