@@ -7,10 +7,12 @@ dependencies:
     - field.field.node.formations.field_description_de_la_formatio
     - field.field.node.formations.field_domaine_de_la_formation
     - field.field.node.formations.field_evaluation_de_la_formation
+    - field.field.node.formations.field_examen
     - field.field.node.formations.field_formateurs
     - field.field.node.formations.field_lieu_d_exercice
     - field.field.node.formations.field_prix_de_recyclage
     - field.field.node.formations.field_prix_initial
+    - field.field.node.formations.field_programmes
     - field.field.node.formations.field_sessions
     - field.field.node.formations.field_type_de_la_formation
     - field.field.node.formations.field_video_de_la_formation
@@ -57,6 +59,14 @@ content:
     third_party_settings: {  }
     weight: 105
     region: content
+  field_examen:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 112
+    region: content
   field_formateurs:
     type: entity_reference_entity_view
     label: above
@@ -95,6 +105,14 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     weight: 107
+    region: content
+  field_programmes:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 111
     region: content
   field_sessions:
     type: entity_reference_label

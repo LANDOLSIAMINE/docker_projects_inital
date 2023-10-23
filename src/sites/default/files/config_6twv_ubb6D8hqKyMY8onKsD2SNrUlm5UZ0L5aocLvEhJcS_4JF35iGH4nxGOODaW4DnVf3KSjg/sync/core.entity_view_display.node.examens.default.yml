@@ -1,0 +1,30 @@
+uuid: d47d7a9c-dded-4112-bd62-50b5d32ab6ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.examens.field_bloc_de_page_examen
+    - node.type.examens
+  module:
+    - entity_reference_revisions
+    - user
+id: node.examens.default
+targetEntityType: node
+bundle: examens
+mode: default
+content:
+  field_bloc_de_page_examen:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

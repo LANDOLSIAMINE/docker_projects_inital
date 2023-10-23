@@ -1,0 +1,22 @@
+uuid: c5f6d034-ca0a-4472-8d7a-b7784b6b9ccf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.examens.field_bloc_de_page_examen
+    - node.type.examens
+  module:
+    - user
+id: node.examens.teaser
+targetEntityType: node
+bundle: examens
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_bloc_de_page_examen: true
