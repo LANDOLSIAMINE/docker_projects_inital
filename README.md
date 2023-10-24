@@ -13,7 +13,10 @@ Maintenant, vous avez les dossiers `src` et `backup` dans votre répertoire de p
 
 ## Utilisation
 
-Expliquez ici comment utiliser votre projet. Par exemple, comment le démarrer, comment l'arrêter, etc.
+1. Lancer la commande docker compose build
+2. Lancer le terminal de docker drupal : docker exec -it <nom-du-docker>
+3. Dans le terminal du docker, Lancer la commande git clone de la repository du projet. 
+
 
 ## Contribution
 
