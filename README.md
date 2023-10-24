@@ -13,9 +13,10 @@ Maintenant, vous avez les dossiers `src` et `backup` dans votre répertoire de p
 
 ## Utilisation
 
-1. Lancer la commande docker compose build
-2. Lancer le terminal de docker drupal : docker exec -it <nom-du-docker>
-3. Dans le terminal du docker, Lancer la commande git clone de la repository du projet. 
+1. Lancer la commande `docker compose build`
+2. Lancer la commande `docker compose up -d`
+3. Lancer le terminal de docker drupal : `docker exec -it <nom-du-docker>`
+4. Dans le terminal du docker, Lancer la commande `git clone` de la repository du projet `/opt/drupal/`. 
 
 
 ## Contribution
