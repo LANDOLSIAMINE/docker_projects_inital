@@ -8,6 +8,6 @@ RUN rm -rf *
 RUN composer require drush/drush
 
 # Clone your repository
-RUN git clone  https://username:token@github.com/LANDOLSIAMINE/formalogistics.git .
+RUN git clone  https://username:token@github.com/username/reponame.git .
 
 WORKDIR /opt/drupal
